@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width:40vh;
+    height:60vh;
+    display: grid;
+    grid-template-areas:
+        "display  display  display  display"
+        "clear    clear    back     division"
+        "button-7 button-8 button-9 multiplication"
+        "button-4 button-5 button-6 soustraction"
+        "button-1 button-2 button-3 addition"
+        "button-0 button-0 button-0 total";
+}
+
+.display {
+    grid-area: display;
+    pointer-events:none;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.back {
+    grid-area: back;
+}
+
+.button-0 {
+    grid-area: button-0;
+}
+
+.button-1 {
+    grid-area: button-1;
+}
+
+.button-2 {
+    grid-area: button-2;
+}
+
+.button-3 {
+    grid-area: button-3;
+}
+
+.button-4 {
+    grid-area: button-4;
+}
+
+.button-5 {
+    grid-area: button-5;
+}
+
+.button-6 {
+    grid-area: button-6;
+}
+
+.button-7 {
+    grid-area: button-7;
+}
+
+.button-8 {
+    grid-area: button-8;
+}
+
+.button-9 {
+    grid-area: button-9;
+}
+
+.addition {
+    grid-area: addition;
+}
+
+.soustraction {
+    grid-area: soustraction;
+}
+
+.multiplication {
+    grid-area: multiplication;
+}
+
+.division {
+    grid-area: division;
+}
+
+.total {
+    grid-area: total;
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:3vh;
+    height:10vh;
+}
+
+.display{
+    justify-content: right;
+    padding-right:4vh;
+    color:white;
+}
+
+.white{
+    background-color: rgb(200,200,200);
+    color: black;
+}
+.white:hover{
+    background-color: rgba(200,200,200,0.7);
+}
+
+.gold{
+    background-color: #df974c;
+}
+.gold:hover{
+    opacity:0.7;
+}
